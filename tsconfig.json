@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/mongodb.ts", "app/registrar/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/mongodb.js", "app/registrar/page.jsx", "app/registrar/page.js", "app/page.js", "app/layout.tsx", "app/api/auth/register/route.js", "app/api/auth/logout/route.js", "app/api/auth/login/route.js", "app/login/page.js"],
   "exclude": ["node_modules"]
 }
