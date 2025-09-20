@@ -1,6 +1,6 @@
 // app/register/page.js
 'use client';
-
+import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -70,7 +70,9 @@ export default function Register() {
               focus:ring-indigo-500 bg-indigo-500' type="submit">Registrarse</button>
         </form>
         <div className="text-center">
-          <a className="text-indigo-800" href="/">Volver al inicio</a>
+          <Link
+            className="text-indigo-800" href="/"
+          />Volver a inicio
         </div>
       </div>
     </div>

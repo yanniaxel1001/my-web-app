@@ -1,6 +1,6 @@
 // app/login/page.js
 'use client';
-
+import Link from "next/link";
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -60,7 +60,9 @@ export default function Login() {
               focus:ring-indigo-500 bg-indigo-500' type="submit">Iniciar Sesión</button>
         </form>
         <div className="text-center">
-          <a className="text-indigo-800" href="/">Volver al inicio</a>
+          <Link
+          className="text-indigo-800" href="/"
+          />Volver
         </div>
       </div>
     </div>

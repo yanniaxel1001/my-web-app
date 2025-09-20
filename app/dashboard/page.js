@@ -1,6 +1,7 @@
 // app/dashboard/page.js
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -45,8 +46,11 @@ export default function Dashboard() {
                     sesion</button>
             </div>
             <div class="md:w-1/2">
-                <img src="images/perros1.jpg" alt="perritos"
-                    class="w-full rounded-lg shadow-lg"></img>
+                <Image
+                    src="/images/perros1.jpg" alt="perros"
+                    width={500}
+                    height={500}
+                    className="w-full h-64 object-cover"/>
             </div>
         </div>
     </div>
@@ -57,8 +61,11 @@ export default function Dashboard() {
         <h2 class="text-3xl font-bold text-gray-800 mb-8">Featured products</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="images/perros2.jpg" alt="perros"
-                    class="w-full h-64 object-cover"></img>
+                <Image
+                    src="/images/perros2.jpg" alt="perros"
+                    width={200}
+                    height={200}
+                    className="w-full h-64 object-cover"/>
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Single Origin Blend</h3>
                     <p class="text-gray-700 text-base">Our most popular blend, featuring beans from a single farm in
@@ -72,8 +79,11 @@ export default function Dashboard() {
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="images/perros3.jpg" alt="perros"
-                    class="w-full h-64 object-cover"></img>
+                <Image
+                    src="/images/perros3.jpg" alt="perros"
+                    width={200}
+                    height={200}
+                    className="w-full h-64 object-cover"/>
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Dark Roast Blend</h3>
                     <p class="text-gray-700 text-base">A bold and flavorful blend of beans from Brazil, Colombia, and
@@ -87,8 +97,11 @@ export default function Dashboard() {
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="images/perros4.jpg" alt="perros"
-                    class="w-full h-64 object-cover"></img>
+                <Image
+                    src="/images/perros4.jpg" alt="perros"
+                    width={200}
+                    height={200}
+                    className="w-full h-64 object-cover"/>
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Dark Roast Blend</h3>
                     <p class="text-gray-700 text-base">A bold and flavorful blend of beans from Brazil, Colombia, and
@@ -102,8 +115,11 @@ export default function Dashboard() {
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="images/perros5.jpg" alt="perros"
-                    class="w-full h-64 object-cover"></img>
+                <Image
+                    src="/images/perros5.jpg" alt="perros"
+                    width={200}
+                    height={200}
+                    className="w-full h-64 object-cover"/>
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Dark Roast Blend</h3>
                     <p class="text-gray-700 text-base">A bold and flavorful blend of beans from Brazil, Colombia, and
