@@ -1,0 +1,15 @@
+# Aplicar a todos los rastreadores
+User-agent: *
+
+# No rastrear las páginas de autenticación
+Disallow: /login
+Disallow: /registrar
+
+# No rastrear el dashboard (contenido privado del usuario)
+Disallow: /dashboard
+
+# Bloquear todas las rutas de API
+Disallow: /api/
+
+# Permitir el rastreo del resto del sitio (incluida la página de inicio)
+Allow: /
